@@ -9,7 +9,7 @@ import java.util.List;
 @Setter
 @Getter
 @AllArgsConstructor
-public class ClassDTO {
+public class ClassSchoolDTO {
     private String name;
     private String profile;
     private List<StudentDTO> students;

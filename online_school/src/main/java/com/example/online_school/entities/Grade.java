@@ -3,6 +3,7 @@ package com.example.online_school.entities;
 import com.example.online_school.dtos.StudentDTO;
 import com.example.online_school.dtos.SubjectDTO;
 import com.example.online_school.dtos.TeacherDTO;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,6 +27,7 @@ public class Grade {
     private Integer gradeValue;
 
     @Column(name = "grade_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date gradeDate;
 
     @Column(name = "type")
